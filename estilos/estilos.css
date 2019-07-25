@@ -10,4 +10,108 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: #f4f4f4;
+}
+.card--1 .car__img--hover {
+  background-image: url(../img/img.jpg);
+}
+.card--2 .car__img--hover {
+  background-image: url(../img/img2.jpg);
+}
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  max-width: 812px;
+}
+.card--time {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #313131;
+}
+.card--clock {
+  float: right;
+}
+.card__info--hover {
+  position: absolute;
+  padding: 16px;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+.card--img {
+  width: 100%;
+  height: 235px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.car__img--hover {
+  transition: all 0.2s ease-out;
+  position: absolute;
+  width: 100%;
+  height: 235px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+
+.card {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  margin-right: 20px;
+  width: 33.3%;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 0 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1, 1.1);
+}
+
+.card--info {
+  z-index: 2;
+  background: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px;
+  line-height: 1.5;
+}
+
+.card--category {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #886688;
+  margin-bottom: 10px;
+}
+
+.card--title,
+.card--by {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card--author {
+  font-weight: 600;
+  color: #ad7d52;
+}
+
+.card:hover .car__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card:hover .card__info--hover {
+  opacity: 1;
 }
